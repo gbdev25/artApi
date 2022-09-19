@@ -1,0 +1,1 @@
+insert into users (username, password, role_id, showcase_art) values ('admin', 'pass', '1', 'test');

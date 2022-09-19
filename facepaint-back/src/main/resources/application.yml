@@ -1,0 +1,19 @@
+
+#spring:
+ # profiles: 
+  # active:
+   #- "@profileActive"
+   
+   #will need to override credentials
+   #url,username,password
+   #inject enviornment variable into yml
+
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASS}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
